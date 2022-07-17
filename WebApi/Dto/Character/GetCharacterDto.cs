@@ -1,4 +1,5 @@
-﻿using WebApi.Models;
+﻿using WebApi.Dto.Weapon;
+using WebApi.Models;
 
 namespace WebApi.Dto.Character
 {
@@ -12,6 +13,8 @@ namespace WebApi.Dto.Character
         public int Intelligence { get; set; } = 10;
 
         public RpgClass Class { get; set; } = RpgClass.Knight;
+
+        public GetWeaponDto Weapon { get; set; }
 
     }
 }
